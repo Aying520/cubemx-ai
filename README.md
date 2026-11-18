@@ -14,6 +14,21 @@ STM32CubeMX + Trae + DeepSeek Harness 的 AI 编码工作流配置库。
 | `trae/skills/stm32-cubemx.md` | 给智能体的技能说明，让它优先调工具而不是猜配置 |
 | `.gitignore` | 忽略生成的工程与 `.bak` 备份 |
 
+## 引擎仓库（已 fork 到本账号）
+
+本仓库只放配置，真正的引擎在 fork 过来的仓库里：
+
+- 本账号 fork：**[Aying520/stm32-cubemx-agent](https://github.com/Aying520/stm32-cubemx-agent)**
+- 上游原仓：[zhihuishuaiqi66/stm32-cubemx-agent](https://github.com/zhihuishuaiqi66/stm32-cubemx-agent)（MIT）
+
+同步上游更新：
+
+```bash
+git remote add upstream https://github.com/zhihuishuaiqi66/stm32-cubemx-agent.git
+git fetch upstream
+git merge upstream/main
+```
+
 ## 工作流
 
 ```
@@ -64,9 +79,8 @@ PB12 输入 上拉 label=KEY1
 6. 工具调用单次耗时 **10–60s**，客户端超时建议 **≥ 120s**
 7. `.ioc2`（CubeMX2）不支持
 
-## 上游
+## 其他参考
 
-- 引擎与插件：[zhihuishuaiqi66/stm32-cubemx-agent](https://github.com/zhihuishuaiqi66/stm32-cubemx-agent)（MIT）
 - 同作者的 MCP/CLI 精简包：[zhihuishuaiqi66/stm32-cubemx](https://github.com/zhihuishuaiqi66/stm32-cubemx)
 - 不装 CubeMX 也能跑的备选：[hyl64/mxmcp](https://github.com/hyl64/mxmcp)
 - Trae 规则参考：[MorningStar0709/trae-agent-enhancements](https://github.com/MorningStar0709/trae-agent-enhancements)、[Cooper-X-Oak/trae-agent-rules](https://github.com/Cooper-X-Oak/trae-agent-rules)
