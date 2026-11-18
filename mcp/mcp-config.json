@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "stm32-cubemx": {
+      "command": "node",
+      "args": [
+        "D:/tools/stm32-cubemx-agent/plugins/stm32-cubemx-mcp/server.mjs"
+      ],
+      "env": {
+        "CUBEMX_HOME": "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeMX",
+        "CUBEMX_TIMEOUT_MS": "120000",
+        "CUBEMX_ALLOW_ANY_PATH": "false",
+        "CUBEMX_ALLOWED_ROOTS": "D:/projects/stm32"
+      }
+    }
+  }
+}
